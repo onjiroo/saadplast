@@ -66,26 +66,34 @@ clicked.addEventListener("click", () => {
   navMenu.style.cssText = "left:-75%";
 });
 
-if (window.innerWidth < 500) {
+if (window.innerWidth < 660) {
   lightbox.option({
     resizeDuration: 100,
     wrapAround: true,
-    maxWidth: 400,  
-    maxHeight: 400 ,
-    disableScrolling: true
+    maxWidth: 400,
+    maxHeight: 400,
+    disableScrolling: true,
   });
-} else {
+} else if (window.innerWidth > 768) {
+  lightbox.option({ 
+    resizeDuration: 100,
+    wrapAround: true,
+    maxWidth: 700,
+    maxHeight: 700,
+    disableScrolling: true,
+  });
+} else if (window.innerWidth < 380) {
   lightbox.option({
     resizeDuration: 100,
     wrapAround: true,
-    maxWidth: 700,  
-    maxHeight: 700,
-    disableScrolling: true
+    maxWidth: 350,
+    maxHeight: 350,
+    disableScrolling: true,
   });
 }
 
 // document.addEventListener('lightbox:opened', () => {
-//   document.documentElement.style.overflow = 'hidden'; 
+//   document.documentElement.style.overflow = 'hidden';
 // });
 
 // document.addEventListener('lightbox:closed', () => {
