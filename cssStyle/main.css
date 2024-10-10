@@ -2627,7 +2627,7 @@ header {
 
 .mask-main-product {
   position: relative;
-  /* padding: 225px 0px; */
+  padding: 225px 0px;
   top: -23px;
   background-image: url("../img/ourProducts.webp");
   background-size: cover;
@@ -2640,11 +2640,15 @@ header {
   font-weight: 700;
   line-height: 73px;
   text-align: center;
-  /* height: 770px; */
+  height: 770px;
   background-position: bottom;
 }
 
 @media (max-width: 640px) {
+  .mask-main-product{
+    padding: 0px;
+    height: auto;
+  }
   .mask-main-product.prod {
     background-image: url("../img/Products\ 1\ \(3\).png");
   }
