@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Google Fonts -->
-  <title>SaadPlast Factory - For Industrial Plastic Containers</title>
+  <title>SaadPlast Factory - Pharmaceutical Bottles</title>
   <meta name="title" content="SaadPlast Factory - For Industry Plastic Containers" />
   <meta name="description"
-    content="saadplast was founded in 1982 in the city of Aleppo , saadplast is Plastic Factory for manufacturing plastic boxes, containers, and shampoo bottles, | saadplast" />
+    content="Explore SaadPlast's premium pharmaceutical bottles, designed for safe and reliable packaging. Our durable bottles meet the highest standards for your pharmaceutical products." />
   <meta name="keywords"
     content="bottles,cans,lab,plastic factory,plastic bottles,plastic,factory,plastic containers,saadplast,saadPlast,saad plast,SaadPlast" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,12 +27,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="img/small-logo.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- light box -->
+  <link rel="stylesheet" href="cssStyle/lightbox.min.css">
+  <style>
+    .box-app-flex .box a .product-image-hover {
+      transition: 0.3s;
+    }
 
+    .box-app-flex .box a:hover .product-image-hover {
+      transform: scale(calc(1.1 - 0.1 * 0.7));
+      filter: brightness(106%);
+    }
+  </style>
 </head>
 
 <body>
   <!-- start-header -->
   <div class="saadplast-main relative aboute">
+    <div class="whatsapp-btn-container" id="whatsapp-btn-container">
+      <a class="whatsapp-btn" href="https://wa.me/+963996985205" target="_blank"><i class="fab fa-whatsapp ds"></i></a>
+      <span id="wt">Contact Us</span>
+    </div>
     <header class="pae-one-one">
       <div class="page-one-one"></div>
       <div class="container h ea" id="f">
@@ -50,17 +65,18 @@
               <a class="productt active" href="ourproducts.html" onclick="" id="product">our products</a>
               <ul>
                 <li class="opp">
-                  <a href="Pharmaceutical-one.html" class="brochuree" id="non1">Pharmaceutical Packaging (Bottles)</a>
+                  <a href="Pharmaceutical-one.html" class="brochuree" id="non1" style="top: 100px">Pharmaceutical
+                    Packaging (Bottles)</a>
                 </li>
                 <li class="opp">
-                  <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 55px">Pharmaceutical
+                  <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 145px">Pharmaceutical
                     Packaging (Droppers)</a>
                 </li>
                 <li class="opp">
-                  <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
+                  <a href="Shampoo.html" class="brochuree" id="non1" style="top: 55px">Shampoo Packaging</a>
                 </li>
                 <li class="opp">
-                  <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
+                  <a href="cream.html" class="brochuree" id="non1">Cream Packaging</a>
                 </li>
               </ul>
             </li>
@@ -109,18 +125,18 @@
             <a class="productt active" href="ourproducts.html" onclick="" id="product">our products</a>
             <div class="hover-affect" id="hover-effect"></div>
             <ul id="olurmu">
+              <li class="opp ilk">
+                <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
+              </li>
+              <li class="opp ilk">
+                <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
+              </li>
               <li class="opp">
                 <a href="Pharmaceutical-one.html" class="brochuree" id="non1">Pharmaceutical Packaging (Bottles)</a>
               </li>
               <li class="opp">
                 <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 55px">Pharmaceutical Packaging
                   (Droppers)</a>
-              </li>
-              <li class="opp">
-                <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
-              </li>
-              <li class="opp">
-                <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
               </li>
             </ul>
           </li>
@@ -133,8 +149,8 @@
     <div class="siyah" id="kapatma"></div>
   </div>
   <div class="mask-main-product ph">
-    <h5 data-aos="zoom-in" class="ilk-head pempe-proo-w wa">Pharmaceutical <p>Packaging</p>
-    </h5>
+    <!-- <h5 data-aos="zoom-in" class="ilk-head pempe-proo-w wa">Pharmaceutical <p>Packaging</p>
+    </h5> -->
   </div>
   <!-- end-header -->
   <!-- product -->
@@ -143,154 +159,198 @@
     <div class="container pro-container">
       <div class="box-app-flex">
         <div class="box">
-          <img src="./img/hun-1.webp" alt="" loading="lazy">
+          <a href="./img/hun-1.webp" data-lightbox="oneBotlles" data-title="A114-20 ml">
+            <img src="./img/hun-1.webp" alt="saadplast A114-20 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>A114-20 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-2.webp" alt="" loading="lazy">
+          <a href="./img/hun-2.webp" data-lightbox="oneBotlles" data-title="A115-30 ml">
+            <img src="./img/hun-2.webp" alt=" saadplast A115-30 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>A115-30 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-3.webp" alt="" loading="lazy">
+          <a href="./img/hun-3.webp" data-lightbox="oneBotlles" data-title="A116-60 ml">
+            <img src="./img/hun-3.webp" alt=" saadplast A116-60 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>A116-60 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun4.webp" alt="" loading="lazy">
+          <a href="./img/hun4.webp" data-lightbox="oneBotlles" data-title="A503-250 ml">
+            <img src="./img/hun4.webp" alt=" saadplast A503-250 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>E503-250 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-5.webp" alt="" loading="lazy">
+          <a href="./img/hun-5.webp" data-lightbox="oneBotlles" data-title="H909-250 ml">
+            <img src="./img/hun-5.webp" alt=" saadplast H909-250 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>H909-250 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-6.webp" alt="" loading="lazy">
+          <a href="./img/hun-6.webp" data-lightbox="oneBotlles" data-title="A117-200 ml">
+            <img src="./img/hun-6.webp" alt=" saadplast A117-200 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>A117-200 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-7.webp" alt="" loading="lazy">
+          <a href="./img/hun-7.webp" data-lightbox="oneBotlles" data-title="A118-250 ml">
+            <img src="./img/hun-7.webp" alt=" saadplast A118-250 ml bottle" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>A118-250 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-8.webp" alt="" loading="lazy">
+          <a href="./img/hun-8.webp" data-lightbox="oneBotlles" data-title="BT-1140-300 cc">
+            <img src="./img/hun-8.webp" alt=" saadplast BT-1140-300 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>BT-1140-300 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-9.webp" alt="" loading="lazy">
+          <a href="./img/hun-9.webp" data-lightbox="oneBotlles" data-title="E504-80 cc">
+            <img src="./img/hun-9.webp" alt=" saadplast E504-80 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>E504-80 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-10.webp" alt="" loading="lazy">
+          <a href="./img/hun-10.webp" data-lightbox="oneBotlles" data-title="B220-40 cc">
+            <img src="./img/hun-10.webp" alt=" saadplast B220-40 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B220-40 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-11.webp" alt="" loading="lazy">
+          <a href="./img/hun-11.webp" data-lightbox="oneBotlles" data-title="B220-25 cc">
+            <img src="./img/hun-11.webp" alt=" saadplast B220-25 cc " class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B220-25 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-12.webp" alt="" loading="lazy">
+          <a href="./img/hun-12.webp" data-lightbox="oneBotlles" data-title="B230-30 cc">
+            <img src="./img/hun-12.webp" alt=" saadplast B230-30 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B230-30 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-13.webp" alt="" loading="lazy">
+          <a href="./img/hun-13.webp" data-lightbox="oneBotlles" data-title="B263-60 cc">
+            <img src="./img/hun-13.webp" alt=" saadplast B263-60 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B263-60 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-14.webp" alt="" loading="lazy">
+          <a href="./img/hun-14.webp" data-lightbox="oneBotlles" data-title="B264-70 cc">
+            <img src="./img/hun-14.webp" alt=" saadplast B264-70 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B264-70 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-15.webp" alt="" loading="lazy">
+          <a href="./img/hun-15.webp" data-lightbox="oneBotlles" data-title="B264-70 cc">
+            <img src="./img/hun-15.webp" alt=" saadplast B264-70 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
-            <p>B267-150 cc</p>
+            <p>B264-70 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-16.webp" alt="" loading="lazy">
+          <a href="./img/hun-16.webp" data-lightbox="oneBotlles" data-title="B266-80 cc">
+            <img src="./img/hun-16.webp" alt=" saadplast B266-80 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B266-80 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-17.webp" alt="" loading="lazy">
+          <a href="./img/hun-17.webp" data-lightbox="oneBotlles" data-title="B265-150 cc">
+            <img src="./img/hun-17.webp" alt=" saadplast B265-150 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B265-150 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-18.webp" alt="" loading="lazy">
+          <a href="./img/hun-18.webp" data-lightbox="oneBotlles" data-title="B238-150 cc">
+            <img src="./img/hun-18.webp" alt=" saadplast B238-150 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B238-150 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-19.webp" alt="" loading="lazy">
+          <a href="./img/hun-19.webp" data-lightbox="oneBotlles" data-title="B232-150 ml">
+            <img src="./img/hun-19.webp" alt=" saadplast B232-150 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B232-150 ml</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-20.webp" alt="" loading="lazy">
+          <a href="./img/hun-20.webp" data-lightbox="oneBotlles" data-title="B236-80 cc">
+            <img src="./img/hun-20.webp" alt=" saadplast B236-80 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B236-80 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-17.webp" alt="" loading="lazy">
+          <a href="./img/hun-17.webp" data-lightbox="oneBotlles" data-title="B235-30 cc">
+            <img src="./img/hun-20.webp" alt=" saadplast B235-30 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B235-30 cc</p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/hun-18.webp" alt="" loading="lazy">
+          <a href="./img/hun-18.webp" data-lightbox="oneBotlles" data-title="B234-77 cc">
+            <img src="./img/hun-18.webp" alt=" saadplast B234-77 cc" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c">(CRC Cap)</p>
             <p>B234-77 cc</p>
@@ -301,14 +361,14 @@
   </div>
   <!-- product -->
   <!-- start footer -->
- <footer>
+  <footer>
     <div class="footer-div">
       <div class="all-footer">
-        <img src="./img/foote-img-2.webp" alt="" class="saadplast-imog" />
+        <img src="./img/foote-img-2.webp" alt="saadplast" class="saadplast-imog" />
         <div class="for-footer-content">
           <span class="footer-content-one">
             <p class="footer-hep">General Maneger</p>
-            <p>+963-0944466923 | +963-0996985205</p>
+            <p>+963 944466923 +963 996985205</p>
             <p class="footer-hep">Email</p>
             <p>info@saadplast.com</p>
             <div class="icons"><span class="footer-icon"><a href="https://www.facebook.com/share/VyQYWe3deVJ8m8CD/"
@@ -316,8 +376,8 @@
                   href="https://www.instagram.com/saad.plast.co?igsh=d2p0ZnY2OHY4ODli" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a></span></div>
             <div class="footer-footer">
-              <span class="footer-reserved darfo hiddenn"><span class="copyyy">Made By </span><a
-                  href="https://wesmartt.com/" target="_blank"><img src="./img/made-w.png" alt=""></a></span>
+              <span class="footer-reserved darfo hiddenn"><span class="copyyy">Made By </span><a href=""
+                  target="_blank"><img src="./img/made-w.png" alt="saadplast"></a></span>
           </span>
           <span class="footer-reserved hiddenn"><span class="saadplast-2">
               <p>2024 SaadPlast </p>
@@ -333,8 +393,8 @@
           </span></span>
       </div>
       <div class="reservedd">
-        <span class="footer-reserved hiddennn"><span class="copyyy">Made By </span><a href="https://wesmartt.com/"
-            target="_blank"><img src="./img/made-w.png" alt=""></a></span></span>
+        <span class="footer-reserved hiddennn"><span class="copyyy">Made By </span><a href="" target="_blank"><img
+              src="./img/made-w.png" alt=""></a></span></span>
       </div>
     </div>
     </div>
@@ -345,6 +405,7 @@
   <script>
     AOS.init({ once: true });
   </script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

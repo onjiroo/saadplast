@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Google Fonts -->
-  <title>SaadPlast Factory - For Industrial Plastic Containers</title>
-  <meta name="title" content="SaadPlast Factory - For Industry Plastic Containers" />
+  <title>SaadPlast Factory - Shampoo Bottles</title>
+  <meta name="title" content="SaadPlast Factory - Shampoo Bottles" />
   <meta name="description"
-    content="saadplast was founded in 1982 in the city of Aleppo , saadplast is Plastic Factory for manufacturing plastic boxes, containers, and shampoo bottles, | saadplast" />
+    content="Explore high-quality shampoo bottles in various sizes and shapes, perfect for all packaging needs. Find the ideal solution for your product today." />
   <meta name="keywords"
     content="bottles,cans,lab,plastic factory,plastic bottles,plastic,factory,plastic containers,saadplast,saadPlast,saad plast,SaadPlast" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,26 +26,31 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="img/small-logo.png" />
-</head>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cssStyle/lightbox.min.css">
+  <!-- light box -->
+  <style>
+    .lb-data .lb-caption {
+      color: #ab3972;
+    }
 
-<!-- Google Fonts -->
-<title>SaadPlast Factory - For Industrial Plastic Containers</title>
-<meta name="title" content="SaadPlast Factory - For Industry Plastic Containers" />
-<meta name="description"
-  content="saadplast was founded in 1982 in the city of Aleppo , saadplast is Plastic Factory for manufacturing plastic boxes, containers, and shampoo bottles, | saadplast" />
-<meta name="keywords"
-  content="bottles,cans,lab,plastic factory,plastic bottles,plastic,factory,plastic containers,saadplast,saadPlast,saad plast,SaadPlast" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
-<link rel="icon" href="img/small-logo.png" />
+    .box-app-flex .box a .product-image-hover {
+      transition: 0.3s;
+    }
+
+    .box-app-flex .box a:hover .product-image-hover {
+      transform: scale(calc(1.1 - 0.1 * 0.5));
+      filter: brightness(106%);
+    }
+  </style>
 </head>
 
 <body>
   <!-- start-header -->
   <div class="saadplast-main relative aboute">
+    <div class="whatsapp-btn-container" id="whatsapp-btn-container">
+      <a class="whatsapp-btn" href="https://wa.me/+963996985205" target="_blank"><i class="fab fa-whatsapp ds"></i></a>
+      <span id="wt">Contact Us</span>
+    </div>
     <header>
       <div class="container h ea" id="f">
         <div class="logo">
@@ -62,17 +67,18 @@
               <a class="productt active" href="ourproducts.html" onclick="" id="product">our products</a>
               <ul>
                 <li class="opp">
-                  <a href="Pharmaceutical-one.html" class="brochuree" id="non1">Pharmaceutical Packaging (Bottles)</a>
+                  <a href="Pharmaceutical-one.html" class="brochuree" id="non1" style="top: 100px">Pharmaceutical
+                    Packaging (Bottles)</a>
                 </li>
                 <li class="opp">
-                  <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 55px">Pharmaceutical
+                  <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 145px">Pharmaceutical
                     Packaging (Droppers)</a>
                 </li>
                 <li class="opp">
-                  <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
+                  <a href="Shampoo.html" class="brochuree" id="non1" style="top: 55px">Shampoo Packaging</a>
                 </li>
                 <li class="opp">
-                  <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
+                  <a href="cream.html" class="brochuree" id="non1">Cream Packaging</a>
                 </li>
               </ul>
             </li>
@@ -121,18 +127,18 @@
             <a class="productt active" href="ourproducts.html" onclick="" id="product">our products</a>
             <div class="hover-affect" id="hover-effect"></div>
             <ul id="olurmu">
+              <li class="opp ilk">
+                <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
+              </li>
+              <li class="opp ilk">
+                <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
+              </li>
               <li class="opp">
                 <a href="Pharmaceutical-one.html" class="brochuree" id="non1">Pharmaceutical Packaging (Bottles)</a>
               </li>
               <li class="opp">
                 <a href="Pharmaceutical-two.html" class="brochuree" id="non1" style="top: 55px">Pharmaceutical Packaging
                   (Droppers)</a>
-              </li>
-              <li class="opp">
-                <a href="Shampoo.html" class="brochuree" id="non1" style="top: 145px">Shampoo Packaging</a>
-              </li>
-              <li class="opp">
-                <a href="cream.html" class="brochuree" id="non1" style="top: 100px">Cream Packaging</a>
               </li>
             </ul>
           </li>
@@ -157,49 +163,62 @@
       <h5 class="mask-h5 text-two-p-c cr ">Shampoo Packaging</h5>
       <div class="box-app-flex">
         <div class="box">
-          <img src="./img/samp (1).webp" alt="">
+          <a href="./img/samp (1).webp" data-lightbox="shampoBotlles" data-title="S106-200 ml">
+            <img src="./img/samp (1).webp" alt="Shampoo bottle S106 200ml" class="product-image-hover">
+          </a>
           <div class="text-two">
 
             <p class="text-two-p-c cr">S106<span style="color: black;">-200 ml</span></p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/samp (2).webp" alt="">
+          <a href="./img/samp (2).webp" data-lightbox="shampoBotlles" data-title="S107-400 ml">
+            <img src="./img/samp (2).webp" alt="Shampoo bottle S107-400 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
 
             <p class="text-two-p-c cr">S107<span style="color: black;">-400 ml</span></p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/samp (3).webp" alt="">
+          <a href="./img/samp (3).webp" data-lightbox="shampoBotlles" data-title="S103-425 ml">
+            <img src="./img/samp (3).webp" alt="Shampoo bottle S103-425 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
 
             <p class="text-two-p-c cr">S103<span style="color: black;">-425 ml</span></p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/samp (4).webp" alt="">
+          <a href="./img/samp (4).webp" data-lightbox="shampoBotlles" data-title="S105-225 ml">
+            <img src="./img/samp (4).webp" alt="Shampoo bottle S105-225 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
-
             <p class="text-two-p-c cr">S105<span style="color: black;">-225 ml</span></p>
           </div>
         </div>
 
         <div class="box">
-          <img src="./img/samp (5).webp" alt="">
+          <a href="./img/samp (5).webp" data-lightbox="shampoBotlles" data-title="S104-250 ml">
+            <img src="./img/samp (5).webp" alt="Shampoo bottle S104-250 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
 
             <p class="text-two-p-c cr">S104<span style="color: black;">-250 ml</span></p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/samp (6).webp" alt="">
+          <a href="./img/samp (6).webp" data-lightbox="shampoBotlles" data-title="S102-400 ml">
+            <img src="./img/samp (6).webp" alt="Shampoo bottle S102-400 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c cr">S102<span style="color: black;">-400 ml</span></p>
           </div>
         </div>
         <div class="box">
-          <img src="./img/samp (7).webp" alt="">
+          <a href="./img/samp (7).webp" data-lightbox="shampoBotlles" data-title="S101-750 ml">
+            <img src="./img/samp (7).webp" alt="Shampoo bottle S101-750 ml" class="product-image-hover">
+          </a>
           <div class="text-two">
             <p class="text-two-p-c cr">S101<span style="color: black;">-750 ml</span></p>
           </div>
@@ -211,13 +230,13 @@
   <!-- end-header -->
   <!-- start footer -->
   <footer>
-    <div class="footer-div">
+    <div class="footer-div nomargin">
       <div class="all-footer">
         <img src="./img/foote-img-2.webp" alt="" class="saadplast-imog" />
         <div class="for-footer-content">
           <span class="footer-content-one">
             <p class="footer-hep">General Maneger</p>
-            <p>+963-0944466923 | +963-0996985205</p>
+            <p>+963 944466923 +963 996985205</p>
             <p class="footer-hep">Email</p>
             <p>info@saadplast.com</p>
             <div class="icons"><span class="footer-icon"><a href="https://www.facebook.com/share/VyQYWe3deVJ8m8CD/"
@@ -225,8 +244,8 @@
                   href="https://www.instagram.com/saad.plast.co?igsh=d2p0ZnY2OHY4ODli" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a></span></div>
             <div class="footer-footer">
-              <span class="footer-reserved darfo hiddenn"><span class="copyyy">Made By </span><a
-                  href="https://wesmartt.com/" target="_blank"><img src="./img/made-w.png" alt=""></a></span>
+              <span class="footer-reserved darfo hiddenn"><span class="copyyy">Made By </span><a href=""
+                  target="_blank"><img src="./img/made-w.png" alt=""></a></span>
           </span>
           <span class="footer-reserved hiddenn"><span class="saadplast-2">
               <p>2024 SaadPlast </p>
@@ -242,16 +261,17 @@
           </span></span>
       </div>
       <div class="reservedd">
-        <span class="footer-reserved hiddennn"><span class="copyyy">Made By </span><a href="https://wesmartt.com/"
-            target="_blank"><img src="./img/made-w.png" alt=""></a></span></span>
+        <span class="footer-reserved hiddennn"><span class="copyyy">Made By </span><a href="" target="_blank"><img
+              src="./img/made-w.png" alt=""></a></span></span>
       </div>
     </div>
     </div>
   </footer>
   <!-- end footer -->
-  <script src="app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
   </script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="app.js"></script>
 </body>

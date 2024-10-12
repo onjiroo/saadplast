@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#testimonial-slider", {
+  new Splide("#testimonial-slider",{
     type: "slide",
     perPage: 2,
     perMove: 1,
@@ -92,10 +92,9 @@ if (window.innerWidth < 660) {
   });
 }
 
-// document.addEventListener('lightbox:opened', () => {
-//   document.documentElement.style.overflow = 'hidden';
-// });
 
-// document.addEventListener('lightbox:closed', () => {
-//   document.documentElement.style.overflow = 'auto';
-// });
+let documentElement = document.getElementById('whatsapp-btn-container');
+documentElement.style.display = 'none';
+setTimeout(() => {
+  documentElement.style.display = 'block';
+}, 5000);
